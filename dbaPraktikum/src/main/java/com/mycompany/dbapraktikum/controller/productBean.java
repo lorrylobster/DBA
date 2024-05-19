@@ -15,12 +15,17 @@ import util.Util;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
 
-@Named(value = "loginBean")
+@Named(value = "productBean")
 @SessionScoped
 /**
- *
+ *tessst
  * @author lmich
  */
-public class productBean {
-    
+public class productBean implements Serializable{
+    private static final long serialVersionUID = 1L;
+    private String password;
+    private String message, uname;
+
+
 }
+
