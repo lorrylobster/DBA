@@ -21,9 +21,10 @@ import util.Util;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
 
-@Named(value = "loginBean")
+@Named(value = "serviceBean")
 @SessionScoped //damit Bean während der gesamten Benutzersitzung aktiv
 
 public class serviceBean {
+    private static final long serialVersionUID = 1L;
     
 }
