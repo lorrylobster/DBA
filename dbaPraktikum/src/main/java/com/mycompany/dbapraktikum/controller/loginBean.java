@@ -29,11 +29,7 @@ public class loginBean implements Serializable{
     private String password;
     private String message, uname;
     
-    /**
-     * Creates a new instance of loginCdiBean
-     */
-    public loginBean() {
-    }
+    
     
     public void loginProject() {
         boolean result = LoginDAO.login(uname, password);
