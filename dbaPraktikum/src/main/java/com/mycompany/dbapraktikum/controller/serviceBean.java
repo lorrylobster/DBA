@@ -24,7 +24,7 @@ import jakarta.inject.Named;
 @Named(value = "serviceBean")
 @SessionScoped //damit Bean während der gesamten Benutzersitzung aktiv
 
-public class serviceBean {
+public class serviceBean implements Serializable{
     private static final long serialVersionUID = 1L;
     
 }
