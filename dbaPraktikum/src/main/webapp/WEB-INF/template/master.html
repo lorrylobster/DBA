@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <h:outputStylesheet library="css" name="styles.css"/>
+        <title><ui:insert name="title">Unser Service für Sie!</ui:insert></title>
+    </h:head>
+    <h:body>
+        <p:growl 
+            id="GROWL" 
+            showSummary="true" 
+            showDetail="true" 
+            life="5000" 
+            skipDetailIfEqualsSummary="true"/>
+        <div id="main">
+            <div id="bannerImg">
+                <p:graphicImage 
+                    class="logo" 
+                    library="images" 
+                    name="HSBI_schwarz.png" 
+                    width="200" height="80" />
+            </div>
+            <div id="banner">
+                <ui:insert name="banner">
+                    <ui:include src="banner.xhtml"/>
+                </ui:insert>
+            </div>
+
+            <div id="menu">
+                <ui:insert name="menu">
+                    <ui:include src="menu.xhtml"/>
+                </ui:insert>               
+            </div>
+
+            <div id="content">
+                <ui:insert name="content"></ui:insert>
+            </div>
+
+        </div>
+    </h:body>
+</html>
