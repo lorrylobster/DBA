@@ -15,7 +15,7 @@ public class Produkte implements Serializable{
     private float pPreis;
     
     public Produkte(){
-        /*todo*/
+        
     }
     
     public Produkte(int id, String name, float preis){
