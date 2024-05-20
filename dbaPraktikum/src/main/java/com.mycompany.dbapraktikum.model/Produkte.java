@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.praktikum.model;
+package com.mycompany.dbapraktikum;
 
 import java.io.Serializable;
 /**
@@ -15,7 +15,7 @@ public class Produkte implements Serializable{
     private float pPreis;
     
     public Produkte(){
-        
+        /*todo*/
     }
     
     public Produkte(int id, String name, float preis){
